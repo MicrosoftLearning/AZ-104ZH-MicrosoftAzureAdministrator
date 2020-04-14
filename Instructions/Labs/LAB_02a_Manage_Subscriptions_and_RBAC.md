@@ -61,7 +61,7 @@ lab:
    {
       "Name": "Support Request Contributor (Custom)",
       "IsCustom": true,
-      "Description": “Allows to create support requests”，
+      "Description": "Allows to create support requests",
       "Actions": [
           "Microsoft.Resources/subscriptions/resourceGroups/read",
           "Microsoft.Support/*"
