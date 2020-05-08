@@ -23,6 +23,8 @@ lab:
 + 任务 6：使用 Azure 虚拟机快照执行文件恢复（可选）
 + 任务 7：查看 Azure 恢复服务软删除功能（可选）
 
+## 预计用时：50 分钟
+
 ## 说明
 
 ### 练习 1：
@@ -269,7 +271,7 @@ lab:
    robocopy [recovery_volume]:\Windows\System32\drivers\etc C:\Windows\system32\drivers\etc hosts /r:1 /w:1
    ```
 
-1. 切换回 **“恢复数据向导”**，并在 *“浏览并恢复文件”* 中单击 **“卸载”**，然后在提示你确认时，单击 **“是”**。 
+1. 切换回 **“恢复数据向导”**，并在 **“浏览和恢复文件”** 中单击 **“卸载”**，然后在提示你确认时，单击 **“是”**。 
 
 1. 终止远程桌面会话。
 
@@ -437,6 +439,8 @@ lab:
    ```pwsh
    Get-AzResourceGroup -Name 'az104-10*' | Remove-AzResourceGroup -Force -AsJob
    ```
+
+   >**注意**：或者，你可以考虑删除自动生成的前缀为 **AzureBackupRG_** 的资源组（它的存在不会带来额外的费用）。
 
     >**注意**：该命令异步执行（由 -AsJob 参数确定），因此尽管此后你可以立即在同一 PowerShell 会话中运行另一个 PowerShell 命令，但实际上要花几分钟才能移除资源组。
 

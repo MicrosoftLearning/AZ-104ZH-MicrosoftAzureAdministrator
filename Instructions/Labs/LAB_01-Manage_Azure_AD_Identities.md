@@ -19,7 +19,9 @@ lab:
 + 任务 1：创建和配置 Azure AD 用户
 + 任务 2：创建具有已分配成员身份和动态成员身份的 Azure AD 组
 + 任务 3：创建一个 Azure Active Directory (AD) 租户
-+ 任务 4：管理 Azure AD 来宾用户 
++ 任务 4：管理 Azure AD 来宾用户
+
+## 预计用时：30 分钟
 
 ## 说明
 

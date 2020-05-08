@@ -19,6 +19,8 @@ lab:
 + 任务 2：使用 Azure PowerShell 创建一个资源组和一个 Azure 托管磁盘
 + 任务 3：使用 Azure PowerShell 配置托管磁盘
 
+## 预计用时：20 分钟
+
 ## 说明
 
 ### 练习 1：
@@ -92,6 +94,12 @@ lab:
 
    ```pwsh
    Get-AzDisk -ResourceGroupName $rgName -Name $diskName
+   ```
+
+1. 要验证当前 SKU 是否为**Standard_LRS**，请运行以下命令：
+
+   ```pwsh
+   (Get-AzDisk -ResourceGroupName $rgName -Name $diskName).Sku
    ```
 
 1. 如要在 Cloud Shell 中的 PowerShell 会话中将磁盘性能 SKU 更改为 **“Premium_LRS”**，运行以下命令：

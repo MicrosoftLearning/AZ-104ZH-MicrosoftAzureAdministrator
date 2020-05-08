@@ -19,6 +19,10 @@ Contoso 在波士顿、纽约和西雅图的办公室设有数据中心。它们
 + 任务 2：配置本地和全局虚拟网络对等互连
 + 任务 3：测试站点间连接 
 
+## 预计用时：30 分钟
+
+### 说明
+
 #### 任务 1：预配实验室环境
 
 在此任务中，你将部署三个虚拟机，每个虚拟机都部署到一个独立的虚拟网络中。其中两个在同一个 Azure 区域中，第三个在另一个 Azure 区域中。 
@@ -195,7 +199,7 @@ Contoso 在波士顿、纽约和西雅图的办公室设有数据中心。它们
 1. 在 Windows PowerShell 控制台窗口中，运行以下命令以测试与 **az104-05-vm2** （其专用 IP 地址为 **10.52.0.4**）的连接性：
 
    ```pwsh
-   Test-NetConnection -ComputerName 10.51.0.4 -Port 3389 -InformationLevel 'Detailed'
+   Test-NetConnection -ComputerName 10.52.0.4 -Port 3389 -InformationLevel 'Detailed'
    ```
 1. 切换回实验室计算机上的 Azure 门户，然后返回 **“虚拟机”** 边栏选项卡。 
 
