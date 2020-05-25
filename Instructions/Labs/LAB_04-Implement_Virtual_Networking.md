@@ -293,7 +293,7 @@ lab:
 
 1. 在 Azure 门户中，通过单击 Azure 门户右上方的图标打开 **“Cloud Shell”** 中的 **“PowerShell”** 会话。
 
-1. 从 Cloud Shell 窗格中，运行以下命令测试在新创建的 DNS 区域中设置的 **“az104-04-vm0”** DNS 记录的外部名称解析（将占位符 `[Name server 1]` 替换为你在本任务前面记下的 **“Name server  1”** 的名称，将占位符 `[domain name]` 替换为你在本任务前面创建的 DNS 域的名称）：
+1. 在“Cloud Shell”窗格中，运行以下命令测试新创建的 DNS 区域中 **az104-04-vm0** DNS 记录集的外部名称解析（将包含 [] 括号在内的占位符 `[Name server 1]` 替换为你在此任务中前面提到的 **Name server 1** 的名称，并将 `[domain name]` 占位符替换为你在此任务之前创建的 DNS 域的名称）：
 
    ```pwsh
    nslookup az104-04-vm0.[domain name] [Name server 1]

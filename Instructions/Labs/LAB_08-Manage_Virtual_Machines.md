@@ -315,7 +315,23 @@ lab:
    ```
     > **注意**：等待确认命令已成功完成。
 
-#### 任务 4：使用 Azure 门户部署具有区域弹性的 Azure 虚拟机规模集
+#### 任务 4：注册 Microsoft.Insights 和 Microsoft.AlertsManagement 资源提供程序。
+
+1. 在 Azure 门户中，通过单击 Azure 门户右上角的图标来打开 **Azure Cloud Shell**。
+
+1. 如果提示你选择 **Bash** 或 **PowerShell**，请选择 **PowerShell**。
+ 
+    >**注意**：如果这是你第一次启动 **Cloud Shell**，并且看到 **“你尚未挂载存储”** 消息，请选择你在本实验室中使用的订阅，然后单击 **“创建存储”**。
+	
+1. 在“Cloud Shell”窗格中，运行以下命令以注册 Microsoft.Insights 和 Microsoft.AlertsManagement 资源提供程序。
+
+   ```pwsh
+   Register-AzResourceProvider -ProviderNamespace Microsoft.Insights
+   
+   Register-AzResourceProvider -ProviderNamespace Microsoft.AlertsManagement
+   ```
+
+#### 任务 5：使用 Azure 门户部署具有区域弹性的 Azure 虚拟机规模集
 
 在此任务中，你将使用 Azure 门户跨可用性区域部署 Azure 虚拟机规模集。
 
@@ -416,7 +432,7 @@ lab:
     >**说明**：等待“虚拟机规模集部署”完成。该操作大需要约 5 分钟。
 
 
-#### 任务 5：使用虚拟机扩展配置 Azure 虚拟机规模集
+#### 任务 6：使用虚拟机扩展配置 Azure 虚拟机规模集
 
 在此任务中，你将通过使用自定义脚本虚拟机扩展将 Windows Server Web 服务器角色安装在上一个任务中部署的 Azure 虚拟机规模集的实例上。 
 
@@ -441,7 +457,7 @@ lab:
     >**说明**：验证浏览器页面是否显示 Azure 虚拟机规模集 **“az10408vmss0”** 其中一个实例的名称。
 
 
-#### 任务 6：缩放 Azure 虚拟机规模集的计算和存储
+#### 任务 7：缩放 Azure 虚拟机规模集的计算和存储
 
 在此任务中，你需要更改虚拟机规模集实例的大小，配置其“自动缩放”设置，并向这些示例附加磁盘。
 
@@ -495,8 +511,6 @@ lab:
 
 1. 如果提示需要选择 **“Bash”** 或 **“PowerShell”**，请选择 **“PowerShell”**。 
 
-    >**说明**：如果这是你第一次启动 **“Cloud Shell”**，并看到 **“你没有装载存储”** 的消息，请选择你在本实验中使用的订阅，然后单击 **“创建存储”**。 
-
 1. 在“Cloud Shell”窗格中，运行以下命令以识别 Azure 虚拟机规模集 **“az10408vmss0”** 前面的负载均衡器的公用 IP 地址。
 
    ```pwsh
@@ -520,7 +534,7 @@ lab:
 
 1. 关闭 Cloud Shell 窗格。 
 
-1. 在 **“az10408vmss0”** 边栏选项卡上，单击 **“存储”**，再单击 **“+ 添加数据磁盘”**，并使用以下设置附加新的托管磁盘（保留其他设置的默认值）：
+1. 在 **az10408vmss0** 边栏选项卡上，单击 **“磁盘”**，再单击 **“+ 添加数据磁盘”**，然后使用以下设置附加新的托管磁盘（将其他设置保留为默认值）：
 
     | 设置 | 数值 | 
     | --- | --- |
