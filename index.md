@@ -1,12 +1,14 @@
 ﻿---
 title: 在线托管说明
 permalink: index.html
-layout: 主页
+layout: home
 ---
 
 # 内容目录
 
-以下列出了每个实验室练习和演示的超链接。
+可在[此处下载](https://github.com/MicrosoftLearning/AZ-104ZH-MicrosoftAzureAdministrator/archive/master.zip)所需的实验室文件
+
+以下列出了每个实验室练习的超链接。
 
 ## 实验室
 

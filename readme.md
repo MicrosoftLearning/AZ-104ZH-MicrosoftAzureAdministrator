@@ -1,7 +1,6 @@
-﻿# 即将发布！
-# AZ-104：Microsoft Azure 管理员
+﻿# AZ-104：Microsoft Azure 管理员
 
-- **[演练链接（HTML 格式）](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/)**
+- **[演练的链接（HTML 格式）](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/)**
 - **你是 MCT 吗？** - 了解我们的 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide-ZH/)
 - **需要手动生成实验室说明吗？** - 可在 [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) 存储库查看相关说明
 

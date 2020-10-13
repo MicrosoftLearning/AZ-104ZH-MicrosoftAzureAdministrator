@@ -46,6 +46,8 @@ Contoso 在波士顿、纽约和西雅图的办公室设有数据中心。它们
 
    New-AzResourceGroup -Name $rgName -Location $location
    ```
+   >**注意**：为了识别 Azure 区域，请从 Cloud Shell 中的“PowerShell”会话中运行 **(Get-AzLocation).Location**
+   
 1. 在“Cloud Shell”窗格中，运行以下命令以创建第一个虚拟网络，并使用你上传的模板和参数文件将一台虚拟机部署到其中：
 
    ```pwsh
