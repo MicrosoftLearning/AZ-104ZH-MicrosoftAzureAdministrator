@@ -1,6 +1,6 @@
 ﻿---
 lab:
-    title: '实验室 09c - 实现 Azure Kubernetes 服务'
+    title: '09c - 实现 Azure Kubernetes 服务'
     module: '模块 09 - 无服务器计算'
 ---
 
