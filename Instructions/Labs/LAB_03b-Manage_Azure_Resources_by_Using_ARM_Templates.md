@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '03b - 使用 ARM 模板管理 Azure 资源'
     module: '模块 03 - Azure 管理'

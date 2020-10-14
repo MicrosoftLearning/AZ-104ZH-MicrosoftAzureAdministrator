@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '03c - 使用 Azure PowerShell 管理 Azure 资源'
     module: '模块 03 - Azure 管理'
