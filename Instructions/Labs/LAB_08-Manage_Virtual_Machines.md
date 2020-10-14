@@ -168,7 +168,7 @@ lab:
         {
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "name": "az104-08-vm1/customScriptExtension",
-            "apiVersion": "2018/6/1",
+            "apiVersion": "2018-06-01",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "az104-08-vm1"
@@ -200,11 +200,11 @@ lab:
 
    ```pwsh
    Invoke-WebRequest -URI http://10.80.0.4 -UseBasicParsing
-  ```
+   ```
 
-    >**注意**：**-UseBasicParsing** 参数对消除 Internet Explorer 上的依赖项以完成 cmdlet 的执行来说很有必要
+>**注意**：**-UseBasicParsing** 参数对消除 Internet Explorer 上的依赖项以完成 cmdlet 的执行来说很有必要
 
-    >**注意**：还可连接到 **az104-08-vm0**，运行 `Invoke-WebRequest -URI http://10.80.0.5` 以访问托管在 **az104-08-vm1** 上的网站。
+>**注意**：还可连接到 **az104-08-vm0**，运行 `Invoke-WebRequest -URI http://10.80.0.5` 以访问托管在 **az104-08-vm1** 上的网站。
 
 #### 任务 3：缩放 Azure 虚拟机的计算和存储
 
@@ -474,7 +474,7 @@ lab:
 
 1. 在 Azure 门户中，搜索并选择 **“负载均衡器”**，然后在负载均衡器列表中，单击 **“az10408vmss0lb”**。
 
-1. 在 **“az10408vmss0lb”** 边栏选项卡上，记下分配给负载均衡器前端的 **“公用 IP 地址” ** 的值，打开新的浏览器选项卡，导航到该 IP 地址。
+1. 在 **“az10408vmss0lb”** 边栏选项卡上，记下分配给负载均衡器前端的 **“公用 IP 地址”** 的值，打开新的浏览器选项卡，导航到该 IP 地址。
 
     >**注意**：验证浏览器页面是否显示 Azure 虚拟机扩展集 **az10408vmss0** 的一个实例的名称。
 
