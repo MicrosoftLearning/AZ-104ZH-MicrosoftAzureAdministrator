@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '07 - 管理 Azure 存储'
     module: '模块 07 - Azure 存储'
