@@ -1,8 +1,9 @@
 ﻿# AZ-104：Microsoft Azure 管理员
 
+> **有一个 [实验室录音和演示](https://github.com/MicrosoftLearning/Lab-Demo-Recordings) 存储库，其中包含指向 Microsoft 官方课程中使用的实验室视频的链接。目的是为 Microsoft 认证培训师提供一种简便的方法来访问产品组合中使用的动手实验室的非音频版本录音。**
+
 - **[演练的链接（HTML 格式）](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/)**
 - **你是 MCT 吗？** - 了解我们的 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide-ZH/)
-- **需要手动生成实验室说明吗？** - 可在 [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) 存储库查看相关说明
 
 ## 我们在做什么？
 
