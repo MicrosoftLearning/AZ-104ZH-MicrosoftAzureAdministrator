@@ -1,4 +1,4 @@
-﻿---
+---
 title: 在线托管说明
 permalink: index.html
 layout: home
