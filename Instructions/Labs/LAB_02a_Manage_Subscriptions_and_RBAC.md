@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: '02a - 管理订阅和 RBAC'
     module: '模块 02 - 治理与符合性'
@@ -60,7 +60,7 @@ lab:
 
 在此任务中，你创建自定义 RBAC 角色的定义。
 
-1. 在实验室计算机上，在记事本中打开名为 “\Allfiles\Labs\02\az104-02a-customRoleDefinition.json”的文件查看其内容：
+1. 在实验室计算机上，在记事本中打开名为 **“\Allfiles\Labs\02\az104-02a-customRoleDefinition.json”** 的文件查看其内容：
 
    ```json
    {

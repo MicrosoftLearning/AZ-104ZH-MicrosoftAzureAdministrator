@@ -40,7 +40,7 @@ lab:
 
     >**说明**：如果这是你第一次启动 **“Cloud Shell”**，并看到 **“你没有安装存储”** 的消息，请选择你在本实验中使用的订阅，然后单击 **“创建存储”**。 
 
-1. 在 Cloud Shell 窗格的工具栏中，单击 **“上传/下载文件”** 图标，然后在下拉菜单中单击 **“上传”** 并上传文件 **“\\\Allfiles\\Module_07\\az104-07-vm-template.json”** 和 **“\\Allfiles\\Module_07\\az104-07-vm-parameters.json”** 到 Cloud Shell 主目录中。
+1. 在 Cloud Shell 窗格的工具栏中，单击 **“上传/下载文件”** 图标，然后在下拉菜单中单击 **“上传”** 并上传文件 **“\\Allfiles\\Module_07\\az104-07-vm-template.json”** 和 **“\\Allfiles\\Module_07\\az104-07-vm-parameters.json”** 到 Cloud Shell 主目录中。
 
 1. 在“Cloud Shell”窗格中运行以下命令，以创建将托管虚拟机的资源组（将 `[Azure_region]` 占位符替换为你打算在其中部署 Azure 虚拟机的 Azure 区域的名称）：
 
@@ -292,7 +292,7 @@ lab:
 
 1. 如果提示需要选择 **“Bash”** 或 **“PowerShell”**，请选择 **“PowerShell”**。 
 
-1. 在“ Cloud Shell”窗格中，运行以下命令，尝试从 **“存储账户”的“az104-07-container”** 容器下载“LICENSE blob”（使用上一个任务中生成的 blob SAS URL 替换 `[blob SAS URL]`占位符）：
+1. 在“ Cloud Shell”窗格中，运行以下命令，尝试从 “存储账户”的 **“az104-07-container”** 容器下载“LICENSE blob”（使用上一个任务中生成的 blob SAS URL 替换 `[blob SAS URL]`占位符）：
 
    ```pwsh
    Invoke-WebRequest -URI '[blob SAS URL]'
