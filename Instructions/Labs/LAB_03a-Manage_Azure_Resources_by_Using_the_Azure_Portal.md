@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '03a - 使用 Azure 门户管理 Azure 资源'
     module: '模块 03 - Azure 管理'
