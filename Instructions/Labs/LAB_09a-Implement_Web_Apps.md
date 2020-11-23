@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: '09a - 实现 Web 应用'
     module: '模块 09 - 无服务器计算'
@@ -169,6 +169,9 @@ lab:
 1. 验证默认网页是否已替换为 **“Hello World!”** 页。 
 
 #### 任务 6：配置并测试 Azure Web 应用的自动缩放
+
+>**注意**：你需要确认 Microsoft.Insights 已在此实验室的订阅中注册。有关此任务的更多信息，请参阅 https://docs.microsoft.com/zh-cn/azure/azure-resource-manager/management/resource-providers-and-types#azure-portal
+    
 
 在此任务中，你将配置和测试 Azure Web 应用的自动缩放。 
 
