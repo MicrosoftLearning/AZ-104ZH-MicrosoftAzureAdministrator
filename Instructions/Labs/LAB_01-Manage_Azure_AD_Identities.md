@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '01 - 管理 Azure Active Directory 标识'
     module: '模块 01 - 标识'
