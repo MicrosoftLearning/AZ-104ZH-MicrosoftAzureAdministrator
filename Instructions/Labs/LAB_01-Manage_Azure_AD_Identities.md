@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: '01 - 管理 Azure Active Directory 标识'
     module: '模块 01 - 标识'
@@ -31,7 +31,7 @@ lab:
 
 在此任务中，我们将创建和配置 Azure AD 用户。
 
-    >**注意**：如果你之前在此 Azure AD 租户上使用过 Azure AD Premium 的试用版许可证，则需要一个新的 Azure AD 租户，或者在该新 Azure AD 租户中在执行任务 3 后执行任务 2。
+>**注意**：如果你之前在此 Azure AD 租户上使用过 Azure AD Premium 的试用版许可证，则需要一个新的 Azure AD 租户，或者在该新 Azure AD 租户中在执行任务 3 后执行任务 2。
 
 1. 在 Azure 门户中，搜索并选择 **“Azure Active Directory”**。
 
