@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '03d - 使用 Azure CLI 管理 Azure 资源'
     module: '模块 03 - Azure 管理'
