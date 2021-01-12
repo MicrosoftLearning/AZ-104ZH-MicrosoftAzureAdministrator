@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: '09c - 实现 Azure Kubernetes 服务'
     module: '模块 09 - 无服务器计算'
@@ -15,8 +15,8 @@ Contoso 具有许多不适合使用 Azure 容器实例运行的多层应用程�
 
 在本实验室中，你将：
 
-+ 任务 1： 部署 Azure Kubernetes 服务群集
-+ 任务 2： 将 Pod 部署到 Azure Kubernetes 服务群集
++ 任务 1：部署 Azure Kubernetes 服务群集
++ 任务 2：将 Pod 部署到 Azure Kubernetes 服务群集
 + 任务 3：缩放 Azure Kubernetes 服务群集中的容器化工作负载
 
 ## 预计用时：40 分钟
@@ -25,7 +25,7 @@ Contoso 具有许多不适合使用 Azure 容器实例运行的多层应用程�
 
 ### 练习 1
 
-#### 任务 1： 注册 Microsoft.Kubernetes 和 Microsoft.KubernetesConfiguration 资源提供程序。
+#### 任务 1：注册 Microsoft.Kubernetes 和 Microsoft.KubernetesConfiguration 资源提供程序。
 
 在此任务中，你将注册部署 Azure Kubernetes 服务群集所需的资源提供程序。
 
@@ -35,9 +35,9 @@ Contoso 具有许多不适合使用 Azure 容器实例运行的多层应用程�
 
 1. 提示选择 **Bash** 或 **PowerShell** 时，选择 **PowerShell**。 
 
-    >**注意**：如果这是第一次启动 **Cloud Shell**，且看到 **“未装载任何存储”** 消息，请选择在本实验室中使用的订阅，然后选择 **“创建存储”**。 
+    >**注意**：如果这是第一次启动 **Cloud Shell**，并看到 **“未装载任何存储”** 消息，请选择在本实验室中使用的订阅，然后选择 **“创建存储”**。 
 
-1. 在 Cloud Shell 窗格中运行以下命令，以注册 Microsoft.Insights 和 Microsoft.AlertsManagement 资源提供程序。
+1. 在“Cloud Shell”窗格中，运行以下命令以注册 Microsoft.Kubernetes 和 Microsoft.KubernetesConfiguration 资源提供程序。
 
    ```pwsh
    Register-AzResourceProvider -ProviderNamespace Microsoft.Kubernetes
@@ -48,7 +48,7 @@ Contoso 具有许多不适合使用 Azure 容器实例运行的多层应用程�
 1. 关闭 Cloud Shell 窗格。   
 
 
-#### 任务 2： 部署 Azure Kubernetes 服务群集
+#### 任务 2：部署 Azure Kubernetes 服务群集
 
 在此任务中，你将使用 Azure 门户部署 Azure Kubernetes 服务群集。
 
@@ -92,16 +92,16 @@ Contoso 具有许多不适合使用 Azure 容器实例运行的多层应用程�
 
     >**注意**：在生产场景中，你需要启用监视。在本例中，由于实验室未涵盖监视，因此禁用了监视。 
 
-    >**注意**：请等待部署完成。此操作大约需要 10 分钟。
+    >**注意**：等待部署完成。该操作需约 10 分钟。
 
 
-#### 任务 3： 将 Pod 部署到 Azure Kubernetes 服务群集
+#### 任务 3：将 Pod 部署到 Azure Kubernetes 服务群集
 
 在此任务中，你会将 Pod 部署到 Azure Kubernetes 服务群集。
 
 1. 在部署边栏选项卡中，单击 **“转到资源”** 链接。
 
-1. 在 **az104-9c-aks1**  Kubernetes 服务边栏选项卡的 **“设置”** 部分，单击 **“节点池”**。
+1. 在 **az104-9c-aks1** Kubernetes 服务边栏选项卡的 **“设置”** 部分，单击 **“节点池”**。
 
 1. 在 **“az104-9c-aks1 - 节点池”** 边栏选项卡中，验证群集是否包含单个池，其中具有一个节点。
 
@@ -147,7 +147,7 @@ Contoso 具有许多不适合使用 Azure 容器实例运行的多层应用程�
     kubectl get deployment
     ```
 
-1. 在**Cloud Shell** 窗格中运行以下命令，以使 Pod 可从 Internet 访问：
+1. 在 **Cloud Shell** 窗格中运行以下命令，以使 Pod 可从 Internet 访问：
 
     ```sh
     kubectl expose deployment nginx-deployment --port=80 --type=LoadBalancer
@@ -187,7 +187,7 @@ Contoso 具有许多不适合使用 Azure 容器实例运行的多层应用程�
     az aks scale --resource-group $RESOURCE_GROUP --name $AKS_CLUSTER --node-count 2
     ```
 
-    > **注意**：请等待附加节点预配完成。此操作大约需要 3 分钟。如果失败，请重新运行 `az aks scale` 命令。
+    > **注意**：请等待附加节点预配完成。该操作需要约 3 分钟。如果失败，请重新运行 `az aks scale` 命令。
 
 1. 在 **Cloud Shell** 窗格中运行以下命令，以验证群集的扩展结果：
 
@@ -230,7 +230,7 @@ Contoso 具有许多不适合使用 Azure 容器实例运行的多层应用程�
 
 #### 清理资源
 
-   >**注意**：请记得删除任何新创建而不会再使用的 Azure 资源。请删除未使用的资源，确保不产生意外费用。
+   >**注意**：请记得删除任何新创建而不会再使用的 Azure 资源。删除未使用的资源，确保不产生意外费用。
 
 1. 在 Azure 门户中，在 **Cloud Shell** 窗格中打开 **Bash** Shell 会话。
 
