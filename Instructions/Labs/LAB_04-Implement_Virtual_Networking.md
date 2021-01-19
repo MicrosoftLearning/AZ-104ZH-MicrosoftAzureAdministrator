@@ -294,14 +294,14 @@ lab:
 
 1. 在 Azure 门户中，通过单击 Azure 门户右上方的图标，在 **“Cloud Shell”** 中打开 **“PowerShell”** 会话。
 
-1. 在 Cloud Shell 窗格中，运行以下命令以测试新创建的 DNS 区域中 **“az104-04-vm0”** DNS 记录集的外部名称解析（将占位符 `[Name server 1]`（包括方括号 []）替换为你之前在本任务中记录的 **“名称服务器 1”** 的名称，将占位符 `[domain name]` 替换为你之前在本任务中创建的 DNS 域的名称）：
+1. 在 Cloud Shell 窗格中，运行以下命令以测试新创建的 DNS 区域中 **“az104-04-vm0”** DNS 记录集的外部名称解析（将占位符 `[Name server 1]`（包括方括号 []）替换为你之前在本任务中记录的 **“名称服务器 1”** 的名称，将占位符 `[domain name]` 替换为你之前在本任务中创建的 DNS 域的名称）：
 
    ```pwsh
    nslookup az104-04-vm0.[domain name] [Name server 1]
    ```
 1. 验证命令输出是否包含 **az104-04-vm0** 的公共 IP 地址。
 
-1. 在 Cloud Shell 窗格中，运行以下命令以测试新创建的 DNS 区域中 **“az104-04-vm1”** DNS 记录集的外部名称解析（将占位符 `[Name server 1]` 替换为你之前在本任务中记录的 **“名称服务器 1”** 的名称，将占位符 `[domain name]` 替换为你之前在本任务中创建的 DNS 域的名称）：
+1. 在 Cloud Shell 窗格中，运行以下命令以测试新创建的 DNS 区域中 **“az104-04-vm1”** DNS 记录集的外部名称解析（将占位符 `[Name server 1]` 替换为你之前在本任务中记录的 **“名称服务器 1”** 的名称，将占位符 `[domain name]` 替换为你之前在本任务中创建的 DNS 域的名称）：
 
    ```pwsh
    nslookup az104-04-vm1.[domain name] [Name server 1]
