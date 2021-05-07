@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: '03c - 使用 Azure PowerShell 管理 Azure 资源'
     module: '模块 03 - Azure 管理'
@@ -33,19 +33,19 @@ lab:
 
 1. 提示选择 **Bash** 或 **PowerShell** 时，选择 **PowerShell**。 
 
-    >**注意**：如果这是你首次启动 **Cloud Shell**，且看到 **“未装载任何存储”** 消息，请选择在本实验室中使用的订阅，然后选择 **“创建存储”**。 
+    >**备注**：如果这是第一次启动 **Cloud Shell**，并看到 **“未装载任何存储”** 消息，请选择在本实验室中使用的订阅，然后选择 **“创建存储”**。 
 
 1. 如果出现提示，请单击 **“创建存储”**，然后等到出现“Azure Cloud Shell”窗格。 
 
-1. 确保 **“PowerShell”** 出现在“Cloud Shell”窗格左上角的下拉菜单中。
+1. 确保 **“PowerShell”** 出现在 Cloud Shell 窗格左上角的下拉菜单中。
 
-#### 任务 2： 使用 Azure PowerShell 创建资源组和 Azure 托管磁盘
+#### 任务 2：使用 Azure PowerShell 创建资源组和 Azure 托管磁盘
 
 在此任务中，你将在 Cloud Shell 中使用 Azure PowerShell 会话来创建资源组和 Azure 托管磁盘
 
 1. 要通过 Cloud Shell 中的 PowerShell 会话创建一个资源组，并且使该资源组与上一个实验室中创建的资源组 **az104-03b-rg1** 位于同一 Azure 区域，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    $location = (Get-AzResourceGroup -Name az104-03b-rg1).Location
 
    $rgName = 'az104-03c-rg1'
@@ -54,12 +54,12 @@ lab:
    ```
 1. 要检索新创建资源组的属性，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    Get-AzResourceGroup -Name $rgName
    ```
 1. 要创建一个新的托管磁盘，并使该托管磁盘与你在本模块先前的实验室中创建的托管磁盘具有相同特征，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    $diskConfig = New-AzDiskConfig `
     -Location $location `
     -CreateOption Empty `
@@ -76,47 +76,47 @@ lab:
 
 1. 要检索新建磁盘的属性，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    Get-AzDisk -ResourceGroupName $rgName -Name $diskName
    ```
 
-#### 任务 3： 使用 Azure PowerShell 配置托管磁盘
+#### 任务 3：使用 Azure PowerShell 配置托管磁盘
 
 在此任务中，你将使用 Cloud Shell 中的 Azure PowerShell 会话来管理 Azure 托管磁盘的配置。 
 
 1. 要通过 Cloud Shell 中的 PowerShell 会话将 Azure 托管磁盘的大小增加到 **64 GB**，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    New-AzDiskUpdateConfig -DiskSizeGB 64 | Update-AzDisk -ResourceGroupName $rgName -DiskName $diskName
    ```
 
 1. 要验证更改是否生效，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    Get-AzDisk -ResourceGroupName $rgName -Name $diskName
    ```
 
 1. 要验证当前 SKU 是否为 **Standard_LRS**，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    (Get-AzDisk -ResourceGroupName $rgName -Name $diskName).Sku
    ```
 
 1. 要通过 Cloud Shell 中的 PowerShell 会话将磁盘性能 SKU 更改为 **“Premium_LRS”**，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    New-AzDiskUpdateConfig -Sku Premium_LRS | Update-AzDisk -ResourceGroupName $rgName -DiskName $diskName
    ```
 
 1. 要验证更改是否生效，请运行以下命令：
 
-   ```pwsh
+   ```powershell
    (Get-AzDisk -ResourceGroupName $rgName -Name $diskName).Sku
    ```
 
 #### 清理资源
 
-   >**注意**：不要删除你在本实验室中部署的资源。在本模块的下一个实验室中，你将引用它们。
+   >**备注**：不要删除你在本实验室中部署的资源。在本模块的下一个实验室中，你将引用它们。
 
 #### 回顾
 
