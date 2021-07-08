@@ -40,7 +40,7 @@ lab:
 
 1. 提示选择 **“Bash”** 或 **“PowerShell”** 时，选择 **“PowerShell”**。
 
-    >**备注**： 如果这是第一次启动 **Cloud Shell**，并看到 **“未装载任何存储”**消息，请选择在本实验室中使用的订阅，然后选择 **“创建存储”**。
+    >**备注**： 如果这是第一次启动 **Cloud Shell**，并看到 **“未装载任何存储”** 消息，请选择在本实验室中使用的订阅，然后选择 **“创建存储”**。
 
 1. 在“Cloud Shell”窗格的工具栏中，单击 **“上传/下载文件”** 图标，在下拉菜单中，单击 **“上传”** 并将文件 **\\Allfiles\\Labs\\06\\az104-06-vms-loop-template.json** 和 **\\Allfiles\\Labs\\06\\az104-06-vms-loop-parameters.json** 上传到 Cloud Shell 主目录中。
 
