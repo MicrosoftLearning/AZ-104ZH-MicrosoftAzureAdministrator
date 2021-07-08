@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '02b - 通过 Azure Policy 管理治理'
     module: '模块 02 - 治理与合规性'
